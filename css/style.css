@@ -524,7 +524,32 @@ p {
         width: 100%;
         min-height: 65vh;
     }
+
+    .skill-1 {
+        gap: 10px;
+    }
+
+    .skill-1 .skill-img {
+        height: 40px;
+        width: 40px;
+    }
 }
+
+@media (max-width: 400px) {
+    .skill-1 {
+        gap: 0px;
+    }
+
+    .skill-wrapper {
+        padding: 20px 20px;
+    }
+
+    .skill-1 .skill-img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
 
 
 .about-main {
