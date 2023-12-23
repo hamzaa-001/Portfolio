@@ -536,6 +536,11 @@ p {
 }
 
 @media (max-width: 400px) {
+    .skill-main {
+        width: 100%;
+        padding: 14px 14px;
+    }
+
     .skill-1 {
         gap: 0px;
     }
@@ -547,6 +552,11 @@ p {
     .skill-1 .skill-img {
         height: 40px;
         width: 40px;
+    }
+
+    .skill-img img {
+        height: 38px;
+        width: 38px;
     }
 }
 
@@ -633,7 +643,7 @@ footer p {
 @media (max-width: 1000px) {
     .about-main {
         width: 100%;
-        height: 35vh;
+        height: 40vh;
     }
 
     .about-main-wrapper {
