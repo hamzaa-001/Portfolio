@@ -164,7 +164,7 @@ a:hover .link h3 {
 }
 
 .social-link-wrapper {
-    height: 35%;
+    height: 40%;
     width: 100%;
     padding: 10px 20px;
     font-family: "regular";
@@ -230,7 +230,7 @@ nav {
 .main-right {
     font-family: "regular";
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     background-color: #121212;
     padding-top: 6vw;
     padding-bottom: 6vw;
@@ -251,9 +251,10 @@ nav {
 
 .top-content {
     width: 100%;
+    height: 120px;
     padding-left: 4vw;
     padding-right: 4vw;
-    padding-top: 4vw;
+    padding-top: 50px;
 }
 
 .top-content h3 {
@@ -271,7 +272,6 @@ nav {
 
 .input-form {
     padding: 4vw;
-    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
