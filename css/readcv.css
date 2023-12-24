@@ -257,11 +257,8 @@ nav {
 
 @media (max-width: 1000px) {
   .container {
-    max-width: 700px;
-    margin: 0px auto 0px;
-    border-radius: 3px;
-    padding: 4vw 4vw;
-    margin-top: 80px;
+    background-color: #121212;
+    box-shadow: none;
   }
 }
 
@@ -411,7 +408,7 @@ nav {
       margin-right: 3px;
     }
 
-    input:checked + label {
+    input:checked+label {
       background: #38e492;
     }
   }
