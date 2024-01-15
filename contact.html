@@ -30,6 +30,16 @@
       href="assets/Images/Favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="assets/Images/Favicon/site.webmanifest" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("a6NPBLqd_7WpiPW_h");
+      })();
+    </script>
   </head>
   <body>
     <div class="main">
@@ -139,51 +149,51 @@
           </div>
 
           <div class="input-form">
-            <form
-              action="https://formspree.io/f/xzbnpjgl"
-              method="post"
-              id="form"
-            >
-              <input
-                type="text"
-                id="name"
-                placeholder="Name"
-                name="Name"
-                required
-                autocomplete="none"
-              />
-              <br />
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              name="Name"
+              required
+              autocomplete="none"
+            />
+            <br />
 
-              <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                name="Email"
-                required
-                autocomplete="none"
-              />
-              <br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              name="Email"
+              required
+              autocomplete="none"
+            />
+            <br />
 
-              <input
-                type="text"
-                id="Subject"
-                placeholder="Subject"
-                name="Subject"
-              />
-              <br />
+            <input
+              type="text"
+              id="Subject"
+              placeholder="Subject"
+              name="Subject"
+            />
+            <br />
 
-              <textarea
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                name="Message"
-                required
-              ></textarea>
-              <br />
+            <textarea
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              name="Message"
+              required
+            ></textarea>
+            <br />
 
-              <button type="submit">Send</button>
-            </form>
+            <button onclick="sendMail()">Send</button>
+          </div>
+
+          <div class="success-msg-wrapper">
+            <div class="success-msg">
+              <p><i class="ri-check-double-fill"></i>Email Sent.</p>
+            </div>
           </div>
         </div>
       </div>
