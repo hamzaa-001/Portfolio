@@ -1,41 +1,39 @@
 const navlinks = document.querySelectorAll(".link");
 
-navlinks.forEach(navlinks => {
-    navlinks.addEventListener("click", () => {
-        document.querySelector(".active").classList.remove("active")
-        navlinks.classList.add("active")
-    })
-})
-
-
+navlinks.forEach((navlinks) => {
+  navlinks.addEventListener("click", () => {
+    document.querySelector(".active").classList.remove("active");
+    navlinks.classList.add("active");
+  });
+});
 
 const menuBtn = document.querySelector(".menu-btn");
 
 menuBtn.addEventListener("click", () => {
-    document.querySelector(".sidenav").style.marginLeft = "0px";
-    document.querySelector(".sidenav").style.transition = "all 700ms";
-})
+  document.querySelector(".sidenav").style.marginLeft = "0px";
+  document.querySelector(".sidenav").style.transition = "all 700ms";
+});
 
 const closeBtn = document.querySelector(".close-btn");
 
 closeBtn.addEventListener("click", () => {
-    document.querySelector(".sidenav").style.marginLeft = "-270px";
-    document.querySelector(".sidenav").style.transition = "all 700ms";
-})
+  document.querySelector(".sidenav").style.marginLeft = "-270px";
+  document.querySelector(".sidenav").style.transition = "all 700ms";
+});
 
+function sendMail() {
+  var params = {
+    form_name: document.getElementById("name").value,
+    email_id: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_yzoe5cv", "template_w63w1rp", params)
+    .then(function (res) {
+      let form = document.querySelector(".input-form");
+      let successMsg = document.querySelector(".success-msg-wrapper");
 
-// let name = document.getElementById('name')
-// let email = document.getElementById('email')
-// let message = document.getElementById('message')
-// let form = document.getElementById('form')
-
-// form.addEventListener('submit', (e) => {
-//     if(email.value == "" || email.value == null){
-//         document.email.style.border = "0.5px solid red"
-//     }
-// })
-
-
-
-
-
+      form.style.display = "none";
+      successMsg.style.display = "block";
+    });
+}
