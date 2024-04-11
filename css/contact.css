@@ -287,7 +287,7 @@ nav {
 
 .input-form input {
     width: 100%;
-    height: 50px;
+    height: 45px;
     padding: 15px;
     border-radius: 6px;
     outline: none;
@@ -305,7 +305,7 @@ nav {
 
 .input-form textarea {
     width: 100%;
-    height: 150px;
+    height: 100px;
     padding: 15px;
     border-radius: 6px;
     outline: none;
