@@ -365,6 +365,15 @@ p {
     margin-top: 15%;
 }
 
+.project-btn-div {
+    margin-top: 12%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 .project-btn {
     margin-top: 12%;
     padding: 5px 15px;
@@ -375,6 +384,10 @@ p {
     border-radius: 6px;
     color: white;
     cursor: pointer;
+}
+
+.project-btn:hover {
+    background-color: #2B2B2B;
 }
 
 
