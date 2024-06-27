@@ -22,7 +22,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 var typed = new Typed(".auto-type-words", {
-  strings: ["Web Dev.", "Frontend Dev.", "UI/UX Dev."],
+  strings: ["Web Dev.", "Full-stack Dev.", "UI/UX Dev."],
   typeSpeed: 120,
   backSpeed: 120,
   loop: true,
