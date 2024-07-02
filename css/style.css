@@ -82,7 +82,7 @@ body {
 }
 
 .close-btn i {
-    color: white;
+    color: rgb(185, 185, 185);
     font-size: 1.5rem;
 }
 
@@ -456,10 +456,73 @@ p {
     }
 }
 
+@media (max-width: 650px) {
+
+    .project-main {
+        width: 100%;
+        min-height: 180vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .project-1 {
+        min-height: 40vh;
+        width: 100%;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .project-1:hover {
+        background-color: transparent;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 40rem;
+    }
+
+
+
+    .project-content {
+        justify-content: start;
+        align-items: start;
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    .project-content h4 {
+        font-size: 20px;
+    }
+
+    .project-content p span {
+        display: none;
+    }
+
+    .project-content a {
+        margin-top: 8%;
+    }
+
+    .project-btn-div {
+        margin-top: 2%;
+    }
+
+    .project-btn {
+        margin-top: -1%;
+        padding: 5px 10px;
+    }
+}
+
 
 .skill-main {
-    width: 90%;
-    height: 70vh;
+    width: 100%;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -486,7 +549,7 @@ p {
 
 
 .skill-1 {
-    height: 10vh;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -502,6 +565,9 @@ p {
     background-color: #1C1C1C;
     border: 0.5px solid rgba(148, 148, 148, 0.527);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-img img {
@@ -543,11 +609,10 @@ p {
 @media (max-width: 1000px) {
     .skill-main {
         width: 100%;
-        min-height: 65vh;
     }
 
     .skill-wrapper {
-        height: 85%;
+        padding: 14px 24px;
     }
 
     .skill-1 {
@@ -557,6 +622,11 @@ p {
     .skill-1 .skill-img {
         height: 40px;
         width: 40px;
+    }
+
+    .skill-img img {
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -588,7 +658,7 @@ p {
 
 
 .about-main {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
 }
 
@@ -607,6 +677,7 @@ p {
 .about-main-wrapper p {
     font-size: 14px;
     width: 95%;
+    color: #7e7e7e;
 }
 
 .about-main-wrapper .about-a {
@@ -677,6 +748,7 @@ footer p {
 
     .about-main-wrapper p {
         font-size: 14px;
+        width: 100%;
     }
 
     footer {
