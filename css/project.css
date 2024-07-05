@@ -271,7 +271,7 @@ nav {
 
 .project-main {
     width: 100%;
-    height: 310vh;
+    height: 240vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -449,7 +449,7 @@ p {
 
     .project-main {
         width: 100%;
-        min-height: 530vh;
+        min-height: 380vh;
         display: flex;
         flex-direction: column;
         gap: 20px;
